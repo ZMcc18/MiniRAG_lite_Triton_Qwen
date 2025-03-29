@@ -21,8 +21,8 @@ from tools.qwen_inference import QwenInference
 def get_args():
     parser = argparse.ArgumentParser(description="MiniRAG")
     parser.add_argument("--model", type=str, default="qwen")
-    parser.add_argument("--workingdir", type=str, default="/home/xd/auditory_eeg/lzxu/triton_project/MiniRAG_lite_Qwen/MiniRAG_mydata/Old-shige-1")
-    parser.add_argument("--datapath", type=str, default="/home/xd/auditory_eeg/lzxu/triton_project/MiniRAG-mydata/dataset/old_shige")
+    parser.add_argument("--workingdir", type=str, default="/pathxxx/MiniRAG_lite_Qwen/MiniRAG_mydata/Old-shige-1")
+    parser.add_argument("--datapath", type=str, default="/pathxxx/MiniRAG-mydata/dataset/old_shige")
     args = parser.parse_args()
     return args
 
@@ -53,7 +53,7 @@ async def qwen_complete(
     return result
 
 if args.model == "qwen":
-    LLM_MODEL = "/home/xd/auditory_eeg/lzxu/triton_project/lite_llama/my_weight/qwen2"
+    LLM_MODEL = "/pathxxx/my_weight/qwen2"
 else:
     print("Invalid model name")
     exit(1)
