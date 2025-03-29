@@ -6,7 +6,7 @@ import warnings
 
 warnings.filterwarnings("ignore", category=UserWarning, module="torch._utils")
 
-checkpoints_dir = "/home/xd/auditory_eeg/lzxu/triton_project/lite_llama/my_weight/qwen2"
+checkpoints_dir = "/pathxxx/my_weight/qwen2"
 
 def main(
     temperature: float = 0.6,
