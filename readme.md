@@ -53,7 +53,6 @@ MiniRAG_lite_Qwen/
 ```bash
 conda create -n MiniRAG_lite_Qwen python=3.11
 conda activate MiniRAG_lite_Qwen
- ```
 ```
 
 接着，安装项目所需的依赖：
@@ -63,7 +62,7 @@ pip install -r MiniRAG_mydata/requirements.txt
 pip install -r lite_qwen/requirements.txt
  ```
 
-```
+
 
 ## 配置参数
 可以通过命令行参数来配置项目的运行参数，例如：
@@ -71,7 +70,7 @@ pip install -r lite_qwen/requirements.txt
 ```bash
 python main_minirag.py --model qwen --workingdir /path/to/working/dir --datapath /path/to/dataset
  ```
-```
+
 
 - --model ：指定使用的模型，目前支持 qwen2.5-3b-Instruct 。
 - --workingdir ：指定工作目录，用于存储中间结果。
