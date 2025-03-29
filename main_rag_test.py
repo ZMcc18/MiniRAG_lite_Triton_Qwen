@@ -2,7 +2,7 @@ from tools.qwen_inference import QwenInference
 
 # 初始化接口
 model = QwenInference(
-    model_path="/home/xd/auditory_eeg/lzxu/triton_project/lite_llama/my_weight/qwen2",
+    model_path="/pathxxx/my_weight/qwen2",
     max_seq_len=2048,
     temperature=0.6
 )
